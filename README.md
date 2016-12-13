@@ -1,5 +1,6 @@
 # gater 
-#### An R interface to GATE
+### An R interface to GATE
+THis PROJECT IS AT EARLY STAGES AND IS VERY MUCH WORK IN PROGRESS!
 
 ### Overview
 
@@ -15,6 +16,20 @@ To install development version from github use:
 
 ```r
 devtools::install_github("christie-nhs-data-science/gater")
+```
+
+If you get the following error running `install_github()` (as I do because I am behind a corporate firewall)
+```R
+Downloading github repo tomliptrot/predictshine@master
+Error in function (type, msg, asError = TRUE)  : 
+  SSL certificate problem: unable to get local issuer certificate
+```
+
+ try running this first:
+
+```R
+library(httr)
+set_config( config( ssl_verifypeer = 0L ) )
 ```
 
 ### Usage
