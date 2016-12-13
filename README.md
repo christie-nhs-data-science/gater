@@ -12,9 +12,12 @@ This project aims to contribute a new package to the [R](https://cran.r-project.
 * Java
 * rJava
 
-To install development version from github use:
+To install development version from github use `install_github` from the `devtools` package:
 
 ```r
+#if not already done, first install devtools
+install.packages('devtools')
+
 devtools::install_github("christie-nhs-data-science/gater")
 ```
 
