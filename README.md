@@ -3,9 +3,13 @@
 
 ### Overview
 
-This project aims to contribute a new package to the R community that allows the user to access the powerful text engineering functionality of the GATE NLP software.  The package is build using GATEs Java API and the rJava package
+This project aims to contribute a new package to the [R](https://cran.r-project.org/) community that allows the user to access the powerful text engineering functionality of the [GATE](https://gate.ac.uk/) NLP software.  The package is build using GATEs [Java API](https://gate.ac.uk/sale/tao/splitch7.html#chap:api) and the [rJava](https://cran.r-project.org/web/packages/rJava/index.html) package
 
 ### Installation
+#### Dependencies
+* R
+* Java
+* rJava
 
 To install development version from github use:
 
@@ -15,7 +19,22 @@ devtools::install_github("christie-nhs-data-science/gater")
 
 ### Usage
 
-Currently the package only contains on fundction `helloJavaWorld()` that demonstartes how to connect R to java
+Currently the package only contains on fundction `helloJavaWorld()` that demonstrates how to connect R to java.
+
+Planned functionality:
+
+```r
+library(gater)
+library(magrittr) #for the pipe opertor %>%
+
+txt %>%
+ gater::tokenise() %>%
+ gater::sentence_splitter() %>%
+ gater::part_of_speech_tagger() %>%
+ gater::use_plugin_github("christie-nhs-data-science/oesophagitis-classifier")
+ 
+```
+ 
 
 ### References
 
