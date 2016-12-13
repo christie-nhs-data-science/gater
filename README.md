@@ -1,6 +1,8 @@
 # gater 
 ### An R interface to GATE
-THis PROJECT IS AT EARLY STAGES AND IS VERY MUCH WORK IN PROGRESS!
+<img src="gater.png" width="300">
+
+THIS PROJECT IS AT EARLY STAGES AND IS VERY MUCH WORK IN PROGRESS!
 
 ### Overview
 
