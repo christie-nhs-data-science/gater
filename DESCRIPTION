@@ -1,13 +1,15 @@
 Package: gater
 Type: Package
-Title: What the Package Does (Title Case)
+Title: An R interface to GATE
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: person("Tom", "Liptrot", email = "tomliptrot@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: tomliptrot@gmail.com
+URL: https://github.com/christie-nhs-data-science/gater
+Description: This project aims to contribute a new package to the R community that 
+    allows the user to access the powerful text engineering functionality of the GATE NLP software.
 Encoding: UTF-8
 LazyData: true
 Imports: rJava
-Depends: rJava
+License: GPL-2
+
